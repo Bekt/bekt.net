@@ -5,7 +5,7 @@ permalink: /p/gae-ssl
 tags: [gae]
 ---
 
-Google App Engine is a great platform to get things done fast.
+Google App Engine is a great platform for getting things done quickly.
 However, it can be very unpleasant to work with due to its sandboxed environment
 and close source code. Basic needs such as installing third-party
 libraries can be tricky to install as well.
@@ -40,7 +40,7 @@ vendor.add('lib')
 At this point, most third-party libraries work just fine. However,
 there's a bit of work that needs to be done to get `requests` working.
 
-Head over to [http://localhost:8000/console]() and execute:
+Head over to http://localhost:8000/console and execute:
 
 {% capture c2 %}import requests
 
@@ -137,4 +137,5 @@ I haven't had a need for that yet :)
 
 ### References
 0: [Open issue that is 2 years old](https://code.google.com/p/googleappengine/issues/detail?id=9246)
-1: [http://stackoverflow.com/q/16192916/893652]
+
+1: http://stackoverflow.com/q/16192916/893652
