@@ -102,7 +102,7 @@ TypeError: must be _socket.socket, not socket
 
 <pre><code class="python">{{ c4 | escape }}</code></pre>
 
-The problem GAE has a "whitelist" of select standard libraries.
+The problem is GAE has a "whitelist" of select standard libraries.
 SSL (_ssl, _socket) is not one of them.
 So, we need to tweak the sandbox environment (dangerous) carefully.
 The below code uses the standard Python socket library instead of the GAE-provided
@@ -134,3 +134,7 @@ INFO     2015-04-04 06:57:46,868 connectionpool.py:735] Starting new HTTPS conne
 
 This solution mostly works, except for non-blocking sockets.
 I haven't had a need for that yet :)
+
+### References
+0: [Open issue that is 2 years old](https://code.google.com/p/googleappengine/issues/detail?id=9246)
+1: [http://stackoverflow.com/q/16192916/893652]
