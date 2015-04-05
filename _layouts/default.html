@@ -1,36 +1,56 @@
 <!doctype html>
 <html>
   <head>
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | Kanat Bekt</title>
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
     <![endif]-->
   </head>
 
   <body>
   <div class="wrapper">
 
-    <header>
-      <img class="logo" src="pic.jpg" alt="logo" />
-      <h1>Kanat Bekt</h1>
-      <div class="about">Hello.</div>
-    </header>
+    <div class="row">
+      <header>
+        <div class="about">
+          <a href="/"><img class="logo" src="/pic.jpg" alt="logo" /></a>
+          <h2><a href="/">Kanat Bekt</a></h2>
+          <p>Student, Software Engineer, Entrepreneur.</p>
+          <p class="small">Currently <a href="https://www.humanlink.co/">@HumanLink</a>.
+            Previously at
+            <a href="http://www.google.com/insidesearch/features/search/knowledge.html">@Google</a>,
+            <a href="http://aws.amazon.com/documentation/silk/">@AWS</a>,
+            <a href="https://payments.amazon.com/">@Amazon</a>,
+            and <a href="https://myhealthware.com/">@SOAPWare</a>.</p>
+          <ul>
+            <li><a href="http://csce.uark.edu/~bektemir/">About</a></li>
+            <li><a href="https://github.com/Bekt">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/bektemirov">LinkedIn</a></li>
+          </ul>
+        </div>
 
-    <section>
-      {{ content }}
-    </section>
+        <div class="recent-posts">
+          <h3>Recent Posts</h3>
+          {% for post in site.posts limit: 10 %}
+            <div><a href="{{ post.url }}">{{ post.title }}</a></div>
+          {% endfor %}
+        </div>
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+    </div>
 
     <footer>
-      <p>
-      </p>
+      <p>Since 2015. &nbsp; <a href="https://github.com/Bekt/bekt.github.io">Source Code</a></p>
     </footer>
 
   </div>
-
-  <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>

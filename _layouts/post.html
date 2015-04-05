@@ -1,7 +1,12 @@
 ---
 layout: default
+comments: true
 ---
-
 <div id="post">
+  <h1 class="title">{{ page.title }}</h1>
+  <span class="post-info">{{ page.date | date_to_string }}
+    Tags: <i>{{ page.tags | array_to_sentence_string }}</i></span>
   {{ content }}
 </div>
+
+{% include comments.html %}

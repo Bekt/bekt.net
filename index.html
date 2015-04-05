@@ -1,13 +1,34 @@
 ---
 layout: default
-title: bekt.github.io
+title: Blog
 ---
 
-{% for post in site.posts %}
-  <div>
-    {{ post.date | date_to_string }} <br/>
-    <a href="{{ post.url }}" class="title">{{ post.title  }}</a>
+{% for post in paginator.posts %}
+  <div class="post-card">
+    <h1 class="title">
+      <a href="{{ post.url }}" class="title" title="{{ post.title }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    <div class="post-info">{{ post.date | date_to_string }}
+      Tags: <i>{{ post.tags }}</i>
+      <a href="{{ post.url }}#disqus_thread">comments</a>
+    </div>
     {{ post.content }}
   </div>
 {% endfor %}
 
+{% include pagination.html %}
+
+
+<script type="text/javascript">
+var disqus_shortname = 'bekt';
+
+/*** DON'T EDIT BELOW THIS LINE ***/
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
