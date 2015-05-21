@@ -4,6 +4,7 @@ title: Blog
 ---
 
 {% for post in paginator.posts %}
+<article>
   <div class="post-card">
     <h1 class="title">
       <a href="{{ site.baseurl }}{{ post.url }}" class="title" title="{{ post.title }}">
@@ -16,6 +17,7 @@ title: Blog
     </div>
     {{ post.content }}
   </div>
+</article>
 {% endfor %}
 
 {% include pagination.html %}
