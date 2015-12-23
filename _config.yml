@@ -2,7 +2,7 @@ safe: true
 source: .
 destination: ./_site
 lsi: false
-paginate: 6
+paginate: 1000
 pygments: true
 permalink: /b/:title
 baseurl: "http://bekt.github.io"

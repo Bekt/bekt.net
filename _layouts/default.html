@@ -1,94 +1,102 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} | Kanat Bekt</title>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/github.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </head>
+<html lang="en">
+<head>
+  <title>{{ page.title }} | Kanat Bekt</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
 
-  <body>
-  <div class="wrapper">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/github.min.css">
 
-    <div class="row">
+  <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+  <![endif]-->
 
-      <header>
-        <div class="about">
-          <div class="logo">
-            <a href="/"><img src="{{ site.baseurl }}/pic.jpg" alt="logo" /></a>
-          </div>
-          <h2><a href="{{ site.baseurl }}/">Kanat Bekt</a></h2>
-          <p>Student, Software Engineer, Entrepreneur.</p>
-          <p class="small">Currently <a href="https://www.humanlink.co/">@HumanLink</a>.
-            Previously
-            <a href="http://www.google.com/insidesearch/features/search/knowledge.html">@Google</a>,
-            <a href="http://aws.amazon.com/documentation/silk/">@AWS</a>,
-            <a href="https://payments.amazon.com/">@Amazon</a>,
-            and <a href="https://myhealthware.com/">@SOAPWare</a>.</p>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="http://csce.uark.edu/~bektemir/">About</a></li>
-            <li><a href="https://github.com/Bekt">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/bektemirov">LinkedIn</a></li>
-          </ul>
-        </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
-        <div class="recent-posts">
-          <h3>Recent Posts</h3>
-          {% for post in site.posts limit: 10 %}
-            <div><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
-          {% endfor %}
+  <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 
-          <!-- Begin MailChimp Signup Form -->
-          <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-          <style type="text/css">
-          	#mc_embed_signup{background:#fff; clear:left; margin: 10px 0;}
-          	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-          	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-          </style>
-          <div id="mc_embed_signup">
-          <form action="//github.us10.list-manage.com/subscribe/post?u=26cc9eeb2e8cbe6309acb45a4&amp;id=ba2221e1ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-          	<label for="mce-EMAIL">Stay tuned</label>
-          	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_26cc9eeb2e8cbe6309acb45a4_ba2221e1ab" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-              </div>
-          </form>
-          </div>
-          <!--End mc_embed_signup-->
-
-          <div class="small">
-            Feed: <a href="{{ site.baseurl }}/feed.xml">XML</a>
-                | <a href="{{ site.baseurl }}/feed.json">JSON</a></div>
-        </div>
-
-      </header>
-
-      <main>
-        <div class="content">
-          {{ content }}
-        </div>
-      </main>
-
+  <!-- MailChimp -->
+  <style type="text/css">
+    #mc_embed_signup{}
+  </style>
+</head>
+<body>
+  <div id="sidebar">
+    <div class="logo">
+      <h1><a href="/">Kanat Bekt</a></h1>
+      <span>Blog <em>&</em> More.</span>
     </div>
 
-    <footer>
-      <p>Since 2015. &nbsp; <a href="https://github.com/Bekt/bekt.github.io">Source Code</a></p>
-    </footer>
+    <div class="logo-mobile">
+      <h1 class="hamburger">
+        <a href="#" id="hamburger"> &#x25BC; Kanat Bekt</a>
+      </h1>
+    </div>
+
+    <section>
+      <div class="intro">
+        <p>
+          <img class="pic" src="//avatars2.githubusercontent.com/u/1221480?s=140" alt="Kanat Bekt"/>
+        </p>
+        <p>Software Engineer from Fayetteville, AR.</p>
+
+        <p>Currently <a href="https://humanlink.co/">@HumanLink</a>.<br>
+            Previously
+            <a href="https://developers.google.com/knowledge-graph/">@Google</a>,
+            <a href="http://aws.amazon.com/documentation/silk/">@AWS</a>,
+            <a href="https://payments.amazon.com/">@Amazon</a>,
+            <a href="https://myhealthware.com/">@SOAPWare</a>,
+            and <a href="/about">more</a>.</p>
+      </div>
+
+      <div class="links">
+        <span>Userful Links</span>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="http://csce.uark.edu/~bektemir/">Posts</a></li>
+          <li><a href="http://csce.uark.edu/~bektemir/">About</a></li>
+          <li><a href="/puzzles">Programming Puzzles</a></li>
+          <li><a href="#">Random</a></li>
+          <li><a href="https://dl.dropboxusercontent.com/u/49883556/kanat_bektemirov_resume.pdf">Resume</a></li>
+          <li><a href="mailto:bekt17+blog@gmail.com">Email</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="https://github.com/Bekt" class="entypo-github" title="@Bekt on GitHub"></a></li>
+          <li><a href="https://www.linkedin.com/in/bektemirov" class="entypo-linkedin" title="Kanat Bektemirov on LinkedIn"></a></li>
+          <li><a href="https://twitter.com/presidentkanat" class="entypo-twitter" title="@PresidentKanat on Twitter"></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p>Feed: <a href="{{ site.baseurl }}/feed.json">JSON</a>
+            | <a href="{{ site.baseurl }}/feed.xml">XML</a>
+        </p>
+      </div>
+
+    </section>
 
   </div>
 
-  {% include ganalytics.html %}
+  <div id="content">
+    <main>{{ content }}</main>
+  </div>
 
-  </body>
+  <script>
+    var sidebar = document.getElementById('sidebar');
+    document.getElementById('hamburger').onclick = function() {
+      if (sidebar.className === 'mobile-visible') {
+        sidebar.className = '';
+      } else {
+        sidebar.className = 'mobile-visible';
+      }
+    };
+  </script>
+
+  {% include ganalytics.html %}
+</body>
 </html>

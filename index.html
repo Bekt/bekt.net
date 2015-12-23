@@ -3,24 +3,21 @@ layout: default
 title: Blog
 ---
 
+<ul class="posts-list">
 {% for post in paginator.posts %}
-<article>
-  <div class="post-card">
+<li>
     <h1 class="title">
-      <a href="{{ site.baseurl }}{{ post.url }}" class="title" title="{{ post.title }}">
+      <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
         {{ post.title }}
       </a>
     </h1>
-    <div class="post-info">{{ post.date | date_to_string }}
+    <span class="info">
+      {{ post.date | date_to_string }}
       Tags: <i>{{ post.tags }}</i>
-      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">comments</a>
-    </div>
-    {{ post.content }}
-  </div>
-</article>
+    </span>
+</li>
 {% endfor %}
-
-{% include pagination.html %}
+</ul>
 
 <script type="text/javascript">
 var disqus_shortname = 'bekt';
