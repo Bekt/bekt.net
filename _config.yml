@@ -1,8 +1,9 @@
 safe: true
+# GitHub Pages only works in the root directory.
 source: .
 destination: ./_site
 lsi: false
 paginate: 1000
 pygments: true
 permalink: /b/:title
-baseurl: "http://bekt.github.io"
+baseurl: "https://blog.bekt.net"
