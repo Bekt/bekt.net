@@ -4,6 +4,10 @@ source: .
 destination: ./_site
 lsi: false
 paginate: 1000
-pygments: true
+highlighter: pygments
 permalink: /b/:title
 baseurl: "https://blog.bekt.net"
+
+collections:
+  pages:
+    output: true
