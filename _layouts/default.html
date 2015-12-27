@@ -13,7 +13,7 @@
     media="x" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/slim-081711.css"
     media="x" onload="if(media!='all')media='all'">
-  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/assets/style.css">
 
   <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
@@ -74,6 +74,9 @@
       <div>
         <p>Feed: <a href="{{ site.baseurl }}/feed.json">JSON</a>
             | <a href="{{ site.baseurl }}/feed.xml">XML</a>
+        </p>
+        <p>
+          <small>Last build: {{ site.time | date: "%F %R" }}</small>
         </p>
       </div>
 
