@@ -54,22 +54,25 @@ body {
 }
 
 #sidebar {
-  font-family: "Helvetica", "Arial", sans-serif;
   width: $sidebar-width;
-  padding: 1em;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  color: #ddd;
   background: $sidebar-color;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 
+.sidebar {
+  font-family: "Helvetica", "Arial", sans-serif;
+  padding: 1em;
+  color: #ddd;
+}
+
 @media (min-width: $mobile) {
   #content {
-    padding-left: $sidebar-width + (3*16);
+    padding-left: $sidebar-width + 16;
   }
   .logo-mobile {
     display: none;
