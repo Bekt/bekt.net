@@ -30,6 +30,15 @@
     color: lighten($body-color, 10%);
   }
 
+  .improve {
+    float: right;
+
+    @media (max-width: $mobile) {
+      float: none;
+      display: block;
+    }
+  }
+
   ul {
     list-style: circle;
   }
