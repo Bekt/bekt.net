@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sharing AWS Credentials Between Users On a Docker Container
-permalink: /p/docker-aws-credentials
+permalink: /p/docker-aws-credentials/
 tags: [docker, aws]
 ---
 

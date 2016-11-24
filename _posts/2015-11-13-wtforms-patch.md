@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Handling Unexpected WTForms Default Values
-permalink: /p/wtforms-patch
+permalink: /p/wtforms-patch/
 tags: [python, wtforms]
 ---
 

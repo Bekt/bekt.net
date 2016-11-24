@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AngularJS: Reducing Initial Load Time by Preloading Data"
-permalink: /p/angular-prefetch
+permalink: /p/angular-prefetch/
 tags: [web, JavaScript]
 ---
 

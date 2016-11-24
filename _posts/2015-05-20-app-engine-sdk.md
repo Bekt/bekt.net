@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automatically Download the Latest App Engine SDK
-permalink: /p/gae-sdk
+permalink: /p/gae-sdk/
 tags: [gae]
 ---
 

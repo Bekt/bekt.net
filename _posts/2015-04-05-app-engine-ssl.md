@@ -1,7 +1,7 @@
 ---
 layout: post
 title: App Engine and SSL
-permalink: /p/gae-ssl
+permalink: /p/gae-ssl/
 tags: [gae]
 ---
 
