@@ -12,21 +12,12 @@ title: Blog
       </a>
     </h1>
     <span class="info">
-      {{ post.date | date_to_string }}
+      {{ post.date | date_to_string }} |
+      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="info"></a> |
       Tags: <i>{{ post.tags }}</i>
     </span>
 </li>
 {% endfor %}
 </ul>
 
-<script type="text/javascript">
-var disqus_shortname = 'bekt';
-
-/*** DON'T EDIT BELOW THIS LINE ***/
-(function () {
-var s = document.createElement('script'); s.async = true;
-s.type = 'text/javascript';
-s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
+<script id="dsq-count-scr" src="//bekt.disqus.com/count.js" async></script>
