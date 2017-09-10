@@ -23,7 +23,7 @@ class FooForm(MyBaseForm):
     is_baz = wtforms.BooleanField('IzBaz')
 
 fd = DummyMultiDict({'foo': 'ayy'})
-f = Foo(fd)
+f = FooForm(fd)
 
 print(f.data)
 
