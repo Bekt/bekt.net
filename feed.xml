@@ -1,0 +1,20 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<description>{{ Kanat Bekt Blog | xml_escape }}</description>
+		<url>{{ site.baseurl }}</url>
+		<atom:link href="{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
+		{% for post in site.posts limit: 20 %}
+			<item>
+				<title>{{ post.title | xml_escape }}</title>
+				<excerpt>{{ post.excerpt | xml_escape }}</excerpt>
+				<content>{{ post.content | xml_escape }}</content>
+				<published>{{ post.date }}</published>
+				<url>{{ site.baseurl }}{{ post.url }}</url>
+				<guid isPermaLink="true">{{ site.baseurl }}{{ post.url }}</guid>
+			</item>
+		{% endfor %}
+	</channel>
+</rss>

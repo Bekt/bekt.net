@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+---
+
+<ul class="posts-list">
+{% for post in paginator.posts %}
+<li>
+    <h1 class="title">
+      <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    <span class="info">
+      {{ post.date | date_to_string }} |
+      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="info"></a> |
+      Tags: <i>{{ post.tags }}</i>
+    </span>
+</li>
+{% endfor %}
+</ul>
+
+<script id="dsq-count-scr" src="//bekt.disqus.com/count.js" async></script>

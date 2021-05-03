@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>{{ page.title }} | Kanat Bekt</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"
+    media="x" onload="if(media!='all')media='all'">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/github.min.css"
+    media="x" onload="if(media!='all')media='all'">
+  <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/slim-081711.css"
+    media="x" onload="if(media!='all')media='all'">
+  <link rel="stylesheet" href="/assets/style.css?{{ site.time | date: '%y%j%H%M' }}">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- MailChimp -->
+  <style type="text/css">
+    #mc_embed_signup{}
+  </style>
+</head>
+<body>
+  <div id="sidebar"><div class="sidebar">
+    <div class="logo">
+      <h1><a href="/">Kanat Bekt</a></h1>
+      <span>Blog <em>&</em> More.</span>
+    </div>
+
+    <div class="logo-mobile">
+      <h1 class="hamburger">
+        <a href="#" id="hamburger"> &#x25BC; Kanat Bekt</a>
+      </h1>
+    </div>
+
+    <section>
+      <div class="intro">
+        <p>
+          <img class="pic" src="//avatars2.githubusercontent.com/u/1221480?s=140" alt="Kanat Bekt"/>
+        </p>
+        <p>Software Engineer from Fayetteville, AR.</p>
+
+        <p>Currently <a href="http://supplypike.com.s3-website-us-west-2.amazonaws.com/">@SupplyPike</a><br>
+            Previously
+            <a href="https://developers.google.com/knowledge-graph/">@Google</a>,
+            <a href="http://aws.amazon.com/documentation/silk/">@AWS</a>,
+            <a href="https://humanlink.co/">@HumanLink</a>,
+            <a href="https://payments.amazon.com/">@Amazon</a>,
+            <a href="https://myhealthware.com/">@SOAPWare</a>,
+            and <a href="/about">more</a>.</p>
+      </div>
+
+      <div class="links">
+        <span>Userful Links</span>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="https://blog.bekt.net">Posts</a></li>
+          <li><a href="http://csce.uark.edu/~bektemir/">About</a></li>
+          <li><a href="/puzzles">Programming Puzzles</a></li>
+          <li><a href="#">Random</a></li>
+          <li><a href="https://dl.dropboxusercontent.com/u/49883556/kanat_bektemirov_resume.pdf">Resume</a></li>
+          <li><a href="mailto:bekt17+blog@gmail.com">Email</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="https://github.com/Bekt" class="entypo-github" title="@Bekt on GitHub"></a></li>
+          <li><a href="https://www.linkedin.com/in/bektemirov" class="entypo-linkedin" title="Kanat Bektemirov on LinkedIn"></a></li>
+          <li><a href="https://twitter.com/presidentkanat" class="entypo-twitter" title="@PresidentKanat on Twitter"></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p>Feed: <a href="{{ site.baseurl }}/feed.json">JSON</a>
+            | <a href="{{ site.baseurl }}/feed.xml">XML</a>
+        </p>
+        <p>
+          <small>Last build: {{ site.time | date: "%F %R" }}</small>
+        </p>
+      </div>
+
+    </section>
+  </div></div>
+
+  <div id="content">
+    <main>{{ content }}</main>
+  </div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+
+    var sidebar = document.getElementById('sidebar');
+    document.getElementById('hamburger').onclick = function() {
+      if (sidebar.className === 'mobile-visible') {
+        sidebar.className = '';
+      } else {
+        sidebar.className = 'mobile-visible';
+      }
+    };
+  </script>
+
+  {% include ganalytics.html %}
+</body>
+</html>

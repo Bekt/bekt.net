@@ -1,0 +1,18 @@
+---
+---
+{
+  "description": "Kanat Bekt Blog",
+  "url": "{{ site.baseurl }}/",
+  "posts": [
+  {% for post in site.posts limit: 20 %}
+    {
+      "title": {{ post.title | jsonify }},
+      "excerpt": {{ post.excerpt | markdownify | jsonify}},
+      "content": {{ post.content | markdownify | jsonify}},
+      "tags": {{ page.tags | jsonify }},
+      "published": {{ post.date | jsonify}},
+      "url": "{{ site.baseurl }}{{ post.url }}"
+    }{% if forloop.last %}{% else %},{% endif %}
+  {% endfor %}
+  ]
+}

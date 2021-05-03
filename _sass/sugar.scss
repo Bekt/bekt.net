@@ -1,0 +1,90 @@
+@import "base";
+
+#sidebar {
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  a:focus, a:hover {
+    text-decoration: underline;
+  }
+}
+
+#content {
+  h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+}
+
+.pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  background-color: #eee;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.logo, .logo-mobile {
+  h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.2;
+
+    a {
+      &:hover {
+        color: #eee !important;
+      }
+      &:hover, &:focus {
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+.logo-mobile {
+  .hamburger a {
+    color: #fff;
+    display: block;
+  }
+}
+
+.links {
+  span { text-transform: uppercase; }
+
+  ul {
+    list-style: none;
+    margin-left: 10px;
+  }
+
+  .social {
+    margin: 1em 0;
+    margin-left: 10px;
+    li {
+      display: inline-block;
+      font-size: $font-size * 2;
+      padding: 0 5px;
+      transition: all 0.1s ease;
+
+      a, a:hover, a:focus { text-decoration: none !important; }
+      a:hover, a:focus {
+        font-weight: bold !important;
+        color: #F0DE41 !important;
+      }
+    }
+  }
+}
+
+pre, code {
+  font-size: $font-size * 0.9;
+  font-family: "Source Code Pro", "lucida console", monospace;
+  line-height: 1.4;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 6px solid #ccc;
+  margin: 10px;
+  padding: 5px 15px;
+  font-style: italic;
+}
