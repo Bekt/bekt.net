@@ -2,7 +2,9 @@
 layout: post
 title: Sharing AWS Credentials Between Users On a Docker Container
 permalink: /p/docker-aws-credentials/
-tags: [docker, aws]
+tags:
+  - docker
+  - aws
 ---
 
 **TL;DR**:
@@ -10,6 +12,8 @@ AWS CLI configurations and credentials are stored in the user's home directory b
 default (`~/.aws`). This becomes a problem when other users such as
 `root`, `www-data`, `nobody`, or cron jobs need access to these credentials.
 This post shows how to get around this in a Docker environment.
+
+YOO
 
 [Docker](https://www.docker.com/) is a great application containment tool for
 building and shipping software of any type. You can learn more about Docker
