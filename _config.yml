@@ -8,6 +8,7 @@ collections:
   pages:
     output: true
 
+kb_baseurl: https://bekt.net
 kb_feed_title: Posts by Kanat
 kb_github_repo: https://github.com/Bekt/bekt.net
 

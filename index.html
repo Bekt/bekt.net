@@ -7,13 +7,13 @@ title: Blog
 {% for post in paginator.posts %}
 <li>
     <h1 class="title">
-      <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+      <a href="{{ post.url }}" title="{{ post.title }}">
         {{ post.title }}
       </a>
     </h1>
     <span class="info">
       {{ post.date | date_to_string }} |
-      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="info"></a> |
+      <a href="{{ post.url }}#disqus_thread" class="info"></a> |
       Tags: <i>{{ post.tags }}</i>
     </span>
 </li>
