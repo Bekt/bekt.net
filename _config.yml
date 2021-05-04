@@ -1,13 +1,16 @@
 safe: true
-# GitHub Pages only works in the root directory.
-source: .
-destination: ./_site
 lsi: false
 paginate: 1000
 highlighter: pygments
 permalink: /p/:title/
-baseurl: "https://blog.bekt.net"
 
 collections:
   pages:
     output: true
+
+kb_feed_title: Posts by Kanat
+kb_github_repo: https://github.com/Bekt/bekt.net
+
+exclude:
+  - README.md
+  - netlify.toml
